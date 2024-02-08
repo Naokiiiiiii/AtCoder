@@ -12,13 +12,16 @@ int main() {
     if (d+1 > D) {
         ansD = 1;
         m += 1;
+    } else {
+        ansD = d+1;
     }
     if (m > M) {
         ansM = 1;
         ansY = y+1;
     } else {
+        ansM = m;
         ansY = y;
     }
-    cout << ansY << " " << ansM << " " << ansD;
+    cout << ansY << " " << ansM << " " << ansD << endl; 
     return 0;
 }
